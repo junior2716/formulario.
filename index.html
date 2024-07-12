@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Interesse em Apartamentos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Formulário de Interesse em Apartamentos</h2>
+    <p>Preencha o formulário abaixo:</p>
+    <a class="form-link" href="https://docs.google.com/forms/d/1gGVGhSKoHzdkLDPiIGti2YV2KczuYQVQrgASOP4rn-Q/edit?pli=1" target="_blank">Preencher Formulário</a>
+
+    <button id="emailButton" style="display: block; margin-top: 20px;">Enviar Respostas por E-mail</button>
+
+    <form id="emailForm" action="mailto:corretora.giovanna.ts@gmail.com" method="post" enctype="text/plain" style="display: none;">
+        <input type="hidden" name="subject" value="Respostas do Formulário de Interesse em Apartamentos">
+        <label for="clt_autonomo">Trabalha com carteira assinada (CLT) ou autônomo?</label><br>
+        <input type="text" id="clt_autonomo" name="clt_autonomo" required><br><br>
+
+        <label for="renda_familiar">Renda familiar total:</label><br>
+        <input type="text" id="renda_familiar" name="renda_familiar" required><br><br>
+
+        <label for="dependentes">Tem dependentes? Se sim, quantos?</label><br>
+        <input type="text" id="dependentes" name="dependentes"><br><br>
+
+        <label for="anos_carteira">Tem 3 anos de carteira assinada ao todo?</label><br>
+        <input type="text" id="anos_carteira" name="anos_carteira" required><br><br>
+
+        <label for="restricao_nome">Possui restrição no nome?</label><br>
+        <input type="text" id="restricao_nome" name="restricao_nome"><br><br>
+
+        <label for="fgts">Tem FGTS? Se sim, quanto?</label><br>
+        <input type="text" id="fgts" name="fgts"><br><br>
+
+        <label for="regiao_preferencia">Qual região de preferência para moradia?</label><br>
+        <input type="text" id="regiao_preferencia" name="regiao_preferencia" required><br><br>
+
+        <label for="preferencia_status">Tem preferência por imóveis prontos, lançamentos ou em construção?</label><br>
+        <input type="text" id="preferencia_status" name="preferencia_status" required><br><br>
+
+        <input type="submit" value="Enviar Respostas">
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
